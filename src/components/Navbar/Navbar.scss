@@ -1,0 +1,29 @@
+.navbar {
+    height: 80px;
+    z-index: 100;
+    .navbar-collapse {
+        background-color: #f8f9fa8f;
+    }
+    .icons {
+        gap: 15px;
+        color: #777;
+        cursor: pointer;
+        .cartIcon {
+            position: relative;
+            span {
+                font-size: 12px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #2879fe;
+                color: white;
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

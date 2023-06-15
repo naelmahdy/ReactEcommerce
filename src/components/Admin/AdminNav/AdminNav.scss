@@ -1,0 +1,22 @@
+.adminNav {
+    height: 85vh;
+
+    .adminNavLinks {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column !important;
+        justify-content: flex-start;
+        align-items: center;
+
+        .adminNavLink {
+            &:hover {
+                text-align: center;
+                width: 100%;
+                border-radius: 10px;
+                background-color: #3e3e3e;
+            }
+        }
+    }
+}
