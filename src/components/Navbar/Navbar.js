@@ -15,12 +15,19 @@ import { useSelector } from 'react-redux';
 const MainNavbar = ({ userData, logOut }) => {
   const [open, setOpen] = useState(false)
   const cart = useSelector((state) => state.cart);
+  const [isLogin, setIsLogin] = useState(false)
+
+
 
   useEffect(() => {
-
+    if (userData) {
+      setIsLogin(true)
+    } else {
+      setIsLogin(false)
+    }
     // console.log('userData', userData)
 
-  }, [userData])
+  }, [userData, isLogin])
 
   return (
     <>
@@ -35,8 +42,8 @@ const MainNavbar = ({ userData, logOut }) => {
                 <KeyboardArrowDownIcon />
               </Nav.Link>
               <Nav.Link as={Link} to={'/products/1'} className='text-dark'>woman</Nav.Link>
-              <Nav.Link as={Link} to={'/products/2'} className='text-dark'>men</Nav.Link>
-              <Nav.Link as={Link} to={'/products/3'} className='text-dark'>children</Nav.Link>
+              <Nav.Link as={Link} to={'/products/1'} className='text-dark'>men</Nav.Link>
+              <Nav.Link as={Link} to={'/products/1'} className='text-dark'>children</Nav.Link>
             </Nav>
 
             <Nav className="m-auto h4 ">

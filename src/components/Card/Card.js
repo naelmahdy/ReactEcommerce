@@ -14,7 +14,7 @@ const Card = ({ item }) => {
       <Link className="link " to={`/product/${item.id}`}>
         <div className=''>
           <div className='image'>
-            {item.isNew && <span>New Season</span>}
+            {item.isNew ? <span>New Season</span> : ""}
             <img src={item.img} alt='' className='mainImg' />
             <img src={item.img2} alt='' className='secondImg' />
           </div>
@@ -25,7 +25,7 @@ const Card = ({ item }) => {
           </div>
         </div>
       </Link>
-      <div><button type="button" className="btn btn-primary" onClick={() => dispatch(addToCart({ ...item, quantity })) & toast.success(`${item.title} is added`)}>Add To Cart</button>
+      <div><button type="button" className="btn btn-primary" onClick={() => item.price && dispatch(addToCart({ ...item, quantity })) & toast.success(`${item.title} is added`)}>Add To Cart</button>
       </div>
 
 

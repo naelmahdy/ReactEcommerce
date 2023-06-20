@@ -76,20 +76,20 @@
             "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
             "price": 100,
             "oldPrice": 19,
-            "isNew": true,
+            "isNew": 1,
             "categoryId": 1,
             "typeId": 1,
             "subCategoryId": 1
         },
         {
             "id": 2,
-            "title": "product2",
+            "title": "product22",
             "description": "description description description",
             "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
             "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
             "price": 200,
             "oldPrice": 19,
-            "isNew": true,
+            "isNew": 0,
             "categoryId": 2,
             "typeId": 1,
             "subCategoryId": 2
@@ -101,7 +101,7 @@
             "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
             "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
             "price": 300,
-            "isNew": true,
+            "isNew": 1,
             "categoryId": 2,
             "typeId": 1,
             "subCategoryId": 3
@@ -114,7 +114,7 @@
             "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
             "price": 400,
             "oldPrice": 19,
-            "isNew": true,
+            "isNew": 1,
             "categoryId": 2,
             "typeId": 2,
             "subCategoryId": 3
@@ -154,6 +154,19 @@
             "price": 200,
             "oldPrice": 19,
             "isNew": true,
+            "categoryId": 2,
+            "typeId": 2,
+            "subCategoryId": 2
+        },
+        {
+            "id": 8,
+            "title": "product7",
+            "description": "description description description",
+            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
+            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
+            "price": 200,
+            "oldPrice": 19,
+            "isNew": 0,
             "categoryId": 2,
             "typeId": 2,
             "subCategoryId": 2

@@ -13,7 +13,8 @@ const Products = () => {
 
   // -------------------------------------------
 
-  const fetchData = async () => {
+
+  const fetchSubCategoryData = async () => {
     try {
 
       const res = await getSingleSubCategory();
@@ -21,32 +22,35 @@ const Products = () => {
       console.log('getSingleSubCategory', res.data)
 
     } catch (err) {
-      console.log('seSubCategory error')
+      console.log('SubCategory error')
     }
 
   }
 
   useEffect(() => {
-    fetchData()
+    fetchSubCategoryData()
     // url
   }, [])
 
 
-  const handleChange = (e) => {
+  const handleSubCategoryChange = (e) => {
     const value = e.target.value
     const isChecked = e.target.checked
     setSelectedSubCategories(isChecked ? [...selectedSubCategories, value] : selectedSubCategories.filter(item => item !== value))
   }
+
   // -------------------------------------------------------------------------------------------------------
   return (
     <div className='products'>
       <div className='left'>
 
         <div className='filterItem'>
-          <h2>Product Categories</h2>
+
+          <h2>Product SubCategories</h2>
+
           {subCategory.map(item => (
             <div className='inputItem' key={item.id}>
-              <input type='checkbox' id={item.id} value={item.id} onChange={handleChange} />
+              <input type='checkbox' id={item.id} value={item.id} onChange={handleSubCategoryChange} />
               <label htmlFor={item.id}>{item.title}</label>
             </div>
           ))}

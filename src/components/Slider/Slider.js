@@ -3,45 +3,34 @@ import Carousel from 'react-bootstrap/Carousel';
 import './Slider.scss'
 const Slider = () => {
   return (
-    <div>
+    <div className='slider'>
 
       <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5e8265170482109.645e6a29ac0ad.jpg"
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
+
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a882dd170482109.645e6a29ab34c.jpg"
             alt="Second slide"
           />
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
+
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8779e4170482109.645e6a29acd4a.jpg"
             alt="Third slide"
           />
 
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
+
         </Carousel.Item>
       </Carousel>
 

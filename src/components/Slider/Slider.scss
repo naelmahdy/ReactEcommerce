@@ -1,6 +1,14 @@
-.carousel-inner {
-    height: calc(100vh - 80px);
-}
-.carousel-inner {
-    bottom: 40%;
+.slider {
+    margin-top: 100px;
+    .carousel-inner {
+        height: calc(80vh);
+        .carousel-inner {
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+    // .carousel-inner {
+    //     bottom: 40%;
+    // }
 }

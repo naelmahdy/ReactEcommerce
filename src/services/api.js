@@ -14,10 +14,11 @@ export const getCategoryOfProducts = () => {
 
 }
 
-// get single product
+// get single product by id
 export const getSingleProduct = (id) => {
   return axios.get(`${BASE_URL}/products/${id}`);
 }
+
 // http://localhost:9000/category?_embed=products
 export const getSingleCategory = () => {
   return axios.get(`${BASE_URL}/category?_embed=products`);
@@ -55,13 +56,43 @@ export const getUser = (email, password) => {
   return axios.get(`${BASE_URL}/users?Email=${email}&Password=${password}`);
 }
 
+// ------------------------------------------------------------------------
+// ---------------------------------admin--------------------------------
+
+export const getCategories = () => {
+  return axios.get(`${BASE_URL}/category`);
+
+}
+export const getSubCategories = () => {
+  return axios.get(`${BASE_URL}/subCategory`);
+}
+
+export const getTypes = () => {
+  return axios.get(`${BASE_URL}/type`);
+}
+// add product
+
+export const addProduct = (product) => {
+  return axios.post(`${BASE_URL}/products`, product);
+}
 
 
+export const deleteProduct = (id) => {
+  return axios.delete(`${BASE_URL}/products/${id}`);
+}
 
-// export const deleteBook = (id) => {
-//     return axios.delete(`${ BASE_URL } / books / ${ id }`);
-// }
 
-// export const editBook = (book) => {
-//     return axios.put(`${ BASE_URL } / books / ${ book.id }`, book);
+export const editProduct = (product) => {
+  return axios.put(`${BASE_URL}/products/${product.id}`, product);
+}
+// admin login
+export const getAdminUser = (email, password) => {
+  return axios.get(`${BASE_URL}/admins?adminEmail=${email}&adminPassword=${password}`);
+
+}
+// ------------------------------------------------------------------------
+// http://localhost:9000/users?_embed=order
+
+// export const addProduct = (product) => {
+//   return axios.post(`${BASE_URL}/products`, product);
 // }

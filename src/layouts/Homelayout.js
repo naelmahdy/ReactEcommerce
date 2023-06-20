@@ -12,12 +12,14 @@ const Homelayout = () => {
     }
 
   }, [userData])
+
   let logOut = () => {
     localStorage.removeItem('userData')
     setUserData(null)
     return <Navigate to={'/'} />
-
   }
+
+
   return (
     <div className='app'>
       <MainNavbar userData={userData} logOut={logOut} />

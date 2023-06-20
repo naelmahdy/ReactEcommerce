@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import './Login.scss'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { getUser } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
 import joi from 'joi'
-const Login = ({ logIn }) => {
+import { getAdminUser } from '../../../services/api';
+const AdminLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -15,23 +14,21 @@ const Login = ({ logIn }) => {
 
   const navigate = useNavigate();
 
-
   const onSubmitHandler = async (e) => {
     e.preventDefault()
-    console.log(logIn)
-
     let validationResponse = validateFormData()
     if (validationResponse.error) {
       setErrorsList(validationResponse.error.details)
     } else {
-      const res = await getUser(email, password);
+      const res = await getAdminUser(email, password);
+      console.log(res);
+      console.log('res.data.length', res.data);
       if (res.data.length > 0) {
-        localStorage.setItem('userData', JSON.stringify(res.data[0]))
-        navigate("/cart");
-
+        localStorage.setItem('adminData', JSON.stringify(res.data[0]))
+        navigate("/admin");
 
       } else {
-        setErrorMessage('email or password is inCorrect')
+        setErrorMessage(' admin email or password is inCorrect')
       }
     }
   }
@@ -82,4 +79,4 @@ const Login = ({ logIn }) => {
   )
 }
 
-export default Login
+export default AdminLogin

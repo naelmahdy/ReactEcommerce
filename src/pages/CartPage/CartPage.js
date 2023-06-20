@@ -7,9 +7,7 @@ import './CartPage.scss'
 import KeyboardBackspaceTwoToneIcon from '@mui/icons-material/KeyboardBackspaceTwoTone';
 import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
-import StripeCheckout from 'react-stripe-checkout';
 // import axios from 'axios'
-
 
 
 const CartPage = () => {
@@ -17,7 +15,6 @@ const CartPage = () => {
 
   const products = useSelector(state => state.cart)
   const [totalPrice, setTotalPrice] = useState('')
-  const [payNow, setPayNow] = useState(false)
   useEffect(() => {
     let price = 0;
     products.map((item) => {
@@ -30,8 +27,11 @@ const CartPage = () => {
   const handleCheckout = () => {
     // console.log(JSON.parse(localStorage.getItem('userData'))['FirstName'])
     if (localStorage.getItem('userData')) {
-      setPayNow(true)
-      console.log('loggedIn')
+
+      // console.log('loggedIn')
+      navigate('/shipping')
+
+
     } else {
       toast.error('You are not logged in please login')
       setTimeout(function () {
@@ -86,17 +86,7 @@ const CartPage = () => {
               </p>
 
               <Button variant="dark" className='w-100' onClick={handleCheckout}>proceed to checkout</Button>
-              {payNow && <div className='mt-3 d-flex justify-content-center align-items-center'>
-                <StripeCheckout
-                  stripeKey="pk_test_51NJIY9ANKgOdkzxdcvdPjX2xv5fTWrUSn7z4JV5b21Y1oV3rbVfma4t118oquBtPYnilaGcIzyWC4yQoZhRAtKBi00iOYdWKud"
-                  name="N2ols store."
-                  amount={totalPrice * 100}
-                  label={'pay to N2ola store'}
-                  description={`your payment amount is $${totalPrice}`}
-                  // token={payment}
-                  email={'test@test.com'}
-                />
-              </div>}
+
             </div>
           </div>
 

@@ -28,7 +28,7 @@ const Cart = () => {
           <img src={item.img} alt="" />
           <div className="details">
             <h1>{item.title}</h1>
-            <p>{item?.description.substring(0, 100)}</p>
+            <p>{item?.description.substring(0, 50)}</p>
 
             <div className="price">  {item.quantity} * ${item.price} </div>
           </div>

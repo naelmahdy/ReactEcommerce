@@ -20,7 +20,7 @@ const Register = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault()
     let validationResponse = validateFormData()
-    console.log(validationResponse)
+    // console.log(validationResponse)
     if (validationResponse.error) {
       setErrorsList(validationResponse.error.details)
     } else {

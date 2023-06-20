@@ -8,6 +8,11 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import AdminLayout from "../layouts/AdminLayout";
 import AdminProducts from "../pages/Admin/AdminProducts/AdminProducts";
+import AddProduct from "../pages/Admin/AddProduct/AddProduct";
+import EditProduct from "../pages/Admin/EditProduct/EditProduct";
+import AdminLogin from "../pages/Admin/AdminLogin/AdminLogin";
+import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute";
+import Shipping from "../components/Shipping/Shipping";
 
 
 export const routes = createBrowserRouter([
@@ -43,6 +48,13 @@ export const routes = createBrowserRouter([
       {
         path: "register",
         element: <Register />,
+      },
+      {
+        path: "shipping",
+        element:
+          <ProtectedRoute adminData={() => { return localStorage.getItem('userData') }}>
+            <Shipping />
+          </ProtectedRoute>
       }
     ],
   },
@@ -51,7 +63,28 @@ export const routes = createBrowserRouter([
     errorElement: <h1> 404 Not Found Page</h1>,
     element: <AdminLayout />,
     children: [
-      { path: "products", element: <AdminProducts /> },
+
+      {
+        path: "", element:
+          <ProtectedRoute adminData={() => { return localStorage.getItem('adminData') }}>
+            <AdminProducts />
+          </ProtectedRoute>
+      },
+
+      { path: "login", element: <AdminLogin /> },
+
+      {
+        path: "add-product", element:
+          <ProtectedRoute adminData={() => { return localStorage.getItem('adminData') }}>
+            <AddProduct />
+          </ProtectedRoute>
+      },
+      {
+        path: "edit-product/:id", element:
+          <ProtectedRoute adminData={() => { return localStorage.getItem('adminData') }}>
+            <EditProduct />
+          </ProtectedRoute>
+      }
 
     ]
   }
