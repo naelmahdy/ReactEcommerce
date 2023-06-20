@@ -28,9 +28,9 @@ const Cart = () => {
           <img src={item.img} alt="" />
           <div className="details">
             <h1>{item.title}</h1>
-            <p>{item?.description.substring(0, 50)}</p>
+            <p>{item?.description.substring(0, 30)}</p>
 
-            <div className="price">  {item.quantity} * ${item.price} </div>
+            <div className="price ml-auto">  {item.quantity} * ${item.price} </div>
           </div>
           <DeleteOutlinedIcon className='delete' onClick={() => dispatch(removeFromCart(item)) & toast.error(`${item.title} is deleted`)} />
         </div>

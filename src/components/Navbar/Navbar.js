@@ -53,8 +53,6 @@ const MainNavbar = ({ userData, logOut }) => {
             <Nav className="ms-auto d-flex align-items-center">
               <Nav.Link as={Link} to={'/'} className='text-dark'>homePage</Nav.Link>
               <Nav.Link as={Link} to={'/about'} className='text-dark'>about</Nav.Link>
-              <Nav.Link as={Link} to={'/'} className='text-dark'>contact</Nav.Link>
-              <Nav.Link as={Link} to={'/'} className='text-dark'>store</Nav.Link>
               <div className="icons d-flex">
                 <SearchIcon />
                 <PersonOutlineIcon />

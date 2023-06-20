@@ -1,225 +1,316 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "FirstName": "the programmer",
-            "LastName": "the programmer",
-            "Email": "islamharaz@yahoo.com",
-            "Password": "eslam_2020",
-            "Phone": "01274291043"
-        },
-        {
-            "id": 4,
-            "FirstName": "themaster",
-            "LastName": "the programmer",
-            "Email": "themaster@gmail.com",
-            "Password": "eslam_2020",
-            "Phone": "0124545457845"
-        },
-        {
-            "id": 5,
-            "FirstName": "mohamed haraz",
-            "LastName": "the programmer",
-            "Email": "mohamedharaz@yahoo.com",
-            "Password": "mohamed_2020",
-            "Phone": "01245814574"
-        },
-        {
-            "FirstName": "dsf",
-            "LastName": "fdsf",
-            "Phone": "010",
-            "Email": "islamharazz@yahoo.com",
-            "Password": "eslam_2020",
-            "id": 6
-        },
-        {
-            "FirstName": "ewrrewr",
-            "LastName": "fdsf",
-            "Phone": "456",
-            "Email": "islamharaz@yahoo.com",
-            "Password": "546",
-            "id": 17
-        }
-    ],
-    "admins": [
-        {
-            "adminName": "islamharaz15167",
-            "adminEmail": "islamharaz64@gmail.com",
-            "adminPassword": "eslam_2010",
-            "supervisorStatus": "superAdmin",
-            "adminPhoto": "https://scontent.fcai19-3.fna.fbcdn.net/v/t1.6435-9/154606001_3805507042877534_2366221628276507573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=yZPF6YKsOlQAX-3a-lL&_nc_ht=scontent.fcai19-3.fna&oh=00_AfAsrPMcjeRg2ZRLnaBDrFNzrpqRBerno-OpF0nf5QCnKQ&oe=647F456B",
-            "id": 1
-        },
-        {
-            "adminName": "ASDSADSAD",
-            "adminEmail": "SADFSA!@GMAIL.XCSA",
-            "adminPassword": "ESLAM_2020",
-            "supervisorStatus": "Admin",
-            "adminPhoto": "https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-6/346301498_9257231561018209_5577245025488625816_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=908EQ2p2InsAX-YsG2X&_nc_ht=scontent.fcai19-3.fna&oh=00_AfC9_Q5joT4wADLONCUHZiuXMe0HF7mUWeLmIAu_OmB0Qg&oe=6477BF67",
-            "id": 4
-        },
-        {
-            "adminName": "islamAhmedharaz",
-            "adminEmail": "islamharaz75@gmail.com",
-            "adminPassword": "eslam_2010",
-            "supervisorStatus": "Admin",
-            "adminPhoto": "https://scontent.fcai19-3.fna.fbcdn.net/v/t1.6435-9/154606001_3805507042877534_2366221628276507573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=yZPF6YKsOlQAX-3a-lL&_nc_ht=scontent.fcai19-3.fna&oh=00_AfAsrPMcjeRg2ZRLnaBDrFNzrpqRBerno-OpF0nf5QCnKQ&oe=647F456B",
-            "id": 5
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "title": "product1",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 100,
-            "oldPrice": 19,
-            "isNew": 1,
-            "categoryId": 1,
-            "typeId": 1,
-            "subCategoryId": 1
-        },
-        {
-            "id": 2,
-            "title": "product22",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 200,
-            "oldPrice": 19,
-            "isNew": 0,
-            "categoryId": 2,
-            "typeId": 1,
-            "subCategoryId": 2
-        },
-        {
-            "id": 3,
-            "title": "product3",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 300,
-            "isNew": 1,
-            "categoryId": 2,
-            "typeId": 1,
-            "subCategoryId": 3
-        },
-        {
-            "id": 4,
-            "title": "product4",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 400,
-            "oldPrice": 19,
-            "isNew": 1,
-            "categoryId": 2,
-            "typeId": 2,
-            "subCategoryId": 3
-        },
-        {
-            "id": 5,
-            "title": "product5",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 200,
-            "oldPrice": 19,
-            "isNew": true,
-            "categoryId": 2,
-            "typeId": 2,
-            "subCategoryId": 3
-        },
-        {
-            "id": 6,
-            "title": "product6",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 200,
-            "oldPrice": 19,
-            "isNew": true,
-            "categoryId": 2,
-            "typeId": 2,
-            "subCategoryId": 1
-        },
-        {
-            "id": 7,
-            "title": "product7",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 200,
-            "oldPrice": 19,
-            "isNew": true,
-            "categoryId": 2,
-            "typeId": 2,
-            "subCategoryId": 2
-        },
-        {
-            "id": 8,
-            "title": "product7",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
-            "img2": "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            "price": 200,
-            "oldPrice": 19,
-            "isNew": 0,
-            "categoryId": 2,
-            "typeId": 2,
-            "subCategoryId": 2
-        }
-    ],
-    "category": [
-        {
-            "id": 1,
-            "title": "woman",
-            "description": "woman cat",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png"
-        },
-        {
-            "id": 2,
-            "title": "men",
-            "description": "description description description",
-            "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png"
-        }
-    ],
-    "subCategory": [
-        {
-            "id": 1,
-            "title": "shoes",
-            "categoryId": 1
-        },
-        {
-            "id": 2,
-            "title": "t_shirt",
-            "categoryId": 2
-        },
-        {
-            "id": 3,
-            "title": "jeans",
-            "categoryId": 2
-        }
-    ],
-    "type": [
-        {
-            "id": 1,
-            "title": "trending",
-            "categoryId": 1
-        },
-        {
-            "id": 2,
-            "title": "featured",
-            "categoryId": 2
-        }
-    ],
-    "order": [
-        {
-            "email": "",
-            "stripeId": "",
-            "Products": 1
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "FirstName": "the programmer",
+      "LastName": "the programmer",
+      "Email": "N2ola@yahoo.com",
+      "Password": "nael_2020",
+      "Phone": "01066342015"
+    },
+    {
+      "id": 4,
+      "FirstName": "themaster",
+      "LastName": "the programmer",
+      "Email": "themaster@gmail.com",
+      "Password": "eslam_2020",
+      "Phone": "0124545457845"
+    },
+    {
+      "id": 5,
+      "FirstName": "mohamed haraz",
+      "LastName": "the programmer",
+      "Email": "mohamedharaz@yahoo.com",
+      "Password": "mohamed_2020",
+      "Phone": "01245814574"
+    },
+    {
+      "FirstName": "dsf",
+      "LastName": "fdsf",
+      "Phone": "010",
+      "Email": "islamharazz@yahoo.com",
+      "Password": "eslam_2020",
+      "id": 6
+    },
+    {
+      "FirstName": "ewrrewr",
+      "LastName": "fdsf",
+      "Phone": "456",
+      "Email": "islamharaz@yahoo.com",
+      "Password": "546",
+      "id": 17
+    },
+    {
+      "FirstName": "ahmed",
+      "LastName": "ali",
+      "Phone": "01011212120",
+      "Email": "islamharaz123@yahoo.com",
+      "Password": "nael123",
+      "id": 77
+    },
+    {
+      "FirstName": "ahmed",
+      "LastName": "ali",
+      "Phone": "01011215452",
+      "Email": "islamharaz1122123@yahoo.com",
+      "Password": "nael123",
+      "id": 53
+    }
+  ],
+  "admins": [
+    {
+      "adminName": "islamharaz15167",
+      "adminEmail": "islamharaz64@gmail.com",
+      "adminPassword": "eslam_2010",
+      "supervisorStatus": "superAdmin",
+      "adminPhoto": "https://scontent.fcai19-3.fna.fbcdn.net/v/t1.6435-9/154606001_3805507042877534_2366221628276507573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=yZPF6YKsOlQAX-3a-lL&_nc_ht=scontent.fcai19-3.fna&oh=00_AfAsrPMcjeRg2ZRLnaBDrFNzrpqRBerno-OpF0nf5QCnKQ&oe=647F456B",
+      "id": 1
+    },
+    {
+      "adminName": "ASDSADSAD",
+      "adminEmail": "SADFSA!@GMAIL.XCSA",
+      "adminPassword": "ESLAM_2020",
+      "supervisorStatus": "Admin",
+      "adminPhoto": "https://scontent.fcai19-3.fna.fbcdn.net/v/t39.30808-6/346301498_9257231561018209_5577245025488625816_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=908EQ2p2InsAX-YsG2X&_nc_ht=scontent.fcai19-3.fna&oh=00_AfC9_Q5joT4wADLONCUHZiuXMe0HF7mUWeLmIAu_OmB0Qg&oe=6477BF67",
+      "id": 4
+    },
+    {
+      "adminName": "islamAhmedharaz",
+      "adminEmail": "islamharaz75@gmail.com",
+      "adminPassword": "eslam_2010",
+      "supervisorStatus": "Admin",
+      "adminPhoto": "https://scontent.fcai19-3.fna.fbcdn.net/v/t1.6435-9/154606001_3805507042877534_2366221628276507573_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=yZPF6YKsOlQAX-3a-lL&_nc_ht=scontent.fcai19-3.fna&oh=00_AfAsrPMcjeRg2ZRLnaBDrFNzrpqRBerno-OpF0nf5QCnKQ&oe=647F456B",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "David Bowie",
+      "description": "David Bowie Space Oddity T-Shirt Dress",
+      "img": "https://i.pinimg.com/564x/2b/61/54/2b61542437c2df774c3ca664bd8f8418.jpg",
+      "img2": "https://i.pinimg.com/564x/8f/23/aa/8f23aa905da1e1a51dca474f2ca53699.jpg",
+      "price": 100,
+      "oldPrice": 120,
+      "isNew": 1,
+      "categoryId": 2,
+      "subCategoryId": 2,
+      "typeId": 1
+    },
+    {
+      "id": 2,
+      "title": " Cowboy Jean",
+      "description": "BDG High-Waisted Cowboy Jean",
+      "img": "https://i.pinimg.com/564x/ae/cd/34/aecd34f864c974bd13e269bd731440ad.jpg",
+      "img2": "https://i.pinimg.com/564x/76/33/63/763363e44737673b6108b2a7e2403d38.jpg",
+      "price": 120,
+      "isNew": 0,
+      "categoryId": 2,
+      "typeId": 1,
+      "subCategoryId": 3
+    },
+    {
+      "id": 3,
+      "title": "Cargo Jean",
+      "description": "BDG Y2K Cargo Jean            ",
+      "img": "https://i.pinimg.com/564x/ef/23/83/ef23838bf2e41a4bcffc3b1474bec4b2.jpg",
+      "img2": "https://i.pinimg.com/564x/1c/e0/53/1ce053123bfaf353dcd5e51611e539ea.jpg",
+      "price": 140,
+      "oldPrice": 160,
+      "isNew": 0,
+      "categoryId": 2,
+      "typeId": 2,
+      "subCategoryId": 3
+    },
+    {
+      "id": 4,
+      "title": " Wide-Leg Jean",
+      "description": "BDG Joey A-Line Wide-Leg Jean",
+      "img": "https://i.pinimg.com/564x/25/95/f4/2595f49c4e8be9d4f09e2d2927892b0c.jpg",
+      "img2": "https://i.pinimg.com/564x/cc/74/8a/cc748a6680b60a0b4420ed5ef7e9e95f.jpg",
+      "price": 160,
+      "oldPrice": 180,
+      "isNew": 1,
+      "categoryId": 2,
+      "typeId": 2,
+      "subCategoryId": 3
+    },
+    {
+      "id": 5,
+      "title": "Converse",
+      "description": "Converse Chuck Taylor All Star Butterfly Wings High Top Sneaker",
+      "img": "https://i.pinimg.com/564x/b3/0c/cb/b30ccb6dab5dea29ae4a117b894c8d5b.jpg",
+      "img2": "https://i.pinimg.com/originals/65/9f/ba/659fba6d3d419d8f57dde1af77d66b48.jpg",
+      "price": 180,
+      "oldPrice": 200,
+      "isNew": 0,
+      "categoryId": 2,
+      "typeId": 2,
+      "subCategoryId": 1
+    },
+    {
+      "id": 6,
+      "title": "Children Sports",
+      "description": "Children Sports Shoes Boys Girls Fashion Clunky Sneakers Baby Cute Casual Shoes Kids Running Shoes Spring autumn winter",
+      "img": "https://i.pinimg.com/originals/54/8d/a0/548da0df57cc88bc41e24daf3619606d.jpg",
+      "img2": "https://i.pinimg.com/originals/0c/1c/9d/0c1c9d8e36dcb7f8a1903dacdb0c63bc.jpg",
+      "price": 210,
+      "oldPrice": 220,
+      "isNew": 0,
+      "categoryId": 2,
+      "typeId": 2,
+      "subCategoryId": 1
+    },
+    {
+      "id": 7,
+      "title": "Audrick",
+      "description": " Dr. Martens Audrick T-Bar Mary Jane Loafer",
+      "img": "https://i.pinimg.com/564x/c3/c7/84/c3c7844c9e8b1990753809a5f8c99943.jpg",
+      "img2": "https://i.pinimg.com/564x/6d/01/8a/6d018a66bdd276e58ae632109df2c8c9.jpg",
+      "price": 220,
+      "oldPrice": 230,
+      "isNew": 1,
+      "categoryId": 2,
+      "typeId": 2,
+      "subCategoryId": 1
+    },
+    {
+      "id": 8,
+      "title": "Audrick",
+      "description": " Dr. Martens Audrick T-Bar Mary Jane Loafer",
+      "img": "https://i.pinimg.com/564x/52/8b/c1/528bc16d7e3dd205537ac86bbb30f76b.jpg",
+      "img2": "https://i.pinimg.com/564x/6d/01/8a/6d018a66bdd276e58ae632109df2c8c9.jpg",
+      "price": 230,
+      "oldPrice": 240,
+      "isNew": 1,
+      "categoryId": 2,
+      "typeId": 2,
+      "subCategoryId": 1
+    },
+    {
+      "id": 9,
+      "title": "Led Zeppelin",
+      "description": "Led Zeppelin T-Shirt Dress  ",
+      "img": "https://i.pinimg.com/564x/d5/f6/cc/d5f6cca2ec763b77308fc56280679d16.jpg",
+      "img2": "https://i.pinimg.com/564x/41/2a/ca/412aca68caabd4068d726dacd5e1ddd2.jpg",
+      "price": 250,
+      "oldPrice": 300,
+      "isNew": 1,
+      "categoryId": 2,
+      "subCategoryId": 2,
+      "typeId": 1
+    },
+    {
+      "id": 10,
+      "title": "Led Zeppelin",
+      "description": "Led Zeppelin T-Shirt Dress  ",
+      "img": "https://i.pinimg.com/564x/e5/73/bd/e573bddca60001fd7ef821d51652d616.jpg",
+      "img2": "https://i.pinimg.com/564x/8f/23/aa/8f23aa905da1e1a51dca474f2ca53699.jpg",
+      "price": 300,
+      "oldPrice": 400,
+      "isNew": 1,
+      "categoryId": 2,
+      "subCategoryId": 2,
+      "typeId": 1
+    },
+    {
+      "id": 11,
+      "title": "Grateful Dead",
+      "description": "Grateful Dead Space Bears Tie-Dye T-Shirt Dress ",
+      "img": "https://i.pinimg.com/564x/2b/61/54/2b61542437c2df774c3ca664bd8f8418.jpg",
+      "img2": "https://i.pinimg.com/564x/62/7f/84/627f84af6735077dac612e26481ed138.jpg",
+      "price": 500,
+      "oldPrice": 650,
+      "isNew": 1,
+      "categoryId": 2,
+      "subCategoryId": 2,
+      "typeId": 1
+    },
+    {
+      "id": 12,
+      "title": "Brooklyn",
+      "description": "Brooklyn T-Shirt Dress            ",
+      "img": "https://i.pinimg.com/564x/d4/eb/53/d4eb534a5522adef7dac4a5fce490b1a.jpg",
+      "img2": "https://i.pinimg.com/564x/de/53/92/de53921934c3311f741be8230290e14b.jpg",
+      "price": 450,
+      "oldPrice": 500,
+      "isNew": 1,
+      "categoryId": 2,
+      "subCategoryId": 2,
+      "typeId": 1
+    },
+    {
+      "id": 13,
+      "title": "nael update",
+      "description": "N2ola description",
+      "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
+      "img2": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png",
+      "price": "100",
+      "oldPrice": "200",
+      "isNew": 1,
+      "categoryId": 2,
+      "subCategoryId": 2,
+      "typeId": 2
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "title": "woman",
+      "description": "woman cat",
+      "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png"
+    },
+    {
+      "id": 2,
+      "title": "men",
+      "description": "description description description",
+      "img": "https://images.manning.com/book/a/b85f344-edd7-4833-adf3-d98878088441/resig.png"
+    }
+  ],
+  "subCategory": [
+    {
+      "id": 1,
+      "title": "shoes",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "t_shirt",
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "title": "jeans",
+      "categoryId": 2
+    }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "title": "trending",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "featured",
+      "categoryId": 2
+    }
+  ],
+  "order": [
+    {
+      "usersId": 1,
+      "email": "",
+      "order": []
+    },
+    {
+      "usersId": 4,
+      "email": "",
+      "order": []
+    },
+    {
+      "usersId": 5,
+      "email": "",
+      "order": []
+    }
+  ]
 }
