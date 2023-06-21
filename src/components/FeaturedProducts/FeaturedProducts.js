@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getTypeOfProducts } from '../../services/api'
 import Card from '../Card/Card'
+import FetchProductsError from '../FetchProductsError/FetchProductsError'
 import './FeatchuredProducts.scss'
 
 const FeaturedProducts = ({ type }) => {
@@ -49,7 +50,7 @@ const FeaturedProducts = ({ type }) => {
       </div>
       <div className='bottom row'>
         {
-          error ? 'sothing went wrong' :
+          error ? <FetchProductsError /> :
             (loading ? 'loading' : data.slice(0, 4).map(item => <Card key={item.id} item={item} />))
           // (loading ? 'loading' : data.slice(0, 3).map(item => <Card2 key={item.id} item={item} />))
         }

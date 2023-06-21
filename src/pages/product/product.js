@@ -9,6 +9,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../rtk/slices/cartSlice';
 import { ToastContainer, toast } from 'react-toastify';
+import FetchProductsError from '../../components/FetchProductsError/FetchProductsError';
 
 const Product = () => {
   const { id } = useParams();
@@ -54,7 +55,7 @@ const Product = () => {
 
 
       {
-        error ? 'sothing went wrong' :
+        error ? <FetchProductsError /> :
           (loading ? 'loading' : <>
 
 

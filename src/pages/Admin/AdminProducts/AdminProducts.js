@@ -85,9 +85,9 @@ const AdminProducts = () => {
       <td>{getTypeName(product.typeId)}</td>
 
       <td className='text-center'>
-        <Button className='mx-1' variant='danger' onClick={() => deleteSelectedProduct(product.id)}>Delete</Button>
+        <Button style={{ width: '75px' }} className='mx-1' variant='danger' onClick={() => deleteSelectedProduct(product.id)}>Delete</Button>
 
-        <Button variant='primary' as={Link} to={`edit-product/${product.id}`}
+        <Button style={{ width: '70px' }} variant='primary' as={Link} to={`edit-product/${product.id}`}
           onClick={() => editSelectedProduct(product.id)}>Edit</Button>
       </td>
 
@@ -99,11 +99,11 @@ const AdminProducts = () => {
 
       <Button as={Link} to={'add-product'} variant="primary" className='mb-3'>Add New Product</Button>
 
-      <Table striped bordered hover>
+      <Table striped bordered hover style={{ textAlign: 'center' }}>
         <thead>
           <tr >
-            <th>#</th>
-            <th>title </th>
+            <th>name</th>
+            <th style={{ width: '260px' }}>title </th>
             <th>img1 </th>
             <th>img2</th>
             <th>price</th>
@@ -116,9 +116,8 @@ const AdminProducts = () => {
 
           </tr>
         </thead>
-        <tbody>
+        <tbody style={{ verticalAlign: 'middle' }}>
           {renderProducts}
-
         </tbody>
       </Table>
 

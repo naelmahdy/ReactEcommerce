@@ -1,11 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Register.scss'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { addUser, validateUser } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
 import joi from 'joi'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Register = () => {
+  useEffect(() => {
+
+    AOS.init();
+    AOS.refresh();
+
+  }, [])
   const [fName, setFName] = useState('')
   const [LName, setLName] = useState('')
   const [phone, setPhone] = useState('')
@@ -67,7 +75,7 @@ const Register = () => {
       {errorMessage ? <div className='alert alert-danger'>{errorMessage}</div> : ''}
 
       <Form
-        onSubmit={onSubmitHandler}
+        onSubmit={onSubmitHandler} data-aos="zoom-out-right" data-aos-duration="3000"
       >
 
         <Form.Group className="my-3" controlId="FName">

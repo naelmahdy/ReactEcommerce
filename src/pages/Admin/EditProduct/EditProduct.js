@@ -3,10 +3,11 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { editProduct, getCategories, getSingleProduct, getSubCategories, getTypes } from '../../../services/api';
-import joi from 'joi'
+import joi from 'joi';
 import Joi from 'joi';
 import { ToastContainer, toast } from 'react-toastify';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const EditProduct = () => {
 
 
@@ -56,6 +57,8 @@ const EditProduct = () => {
   }
   // -------------------------------------
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     getCategories().then((res) => {
       setCategories(res.data)
     })
@@ -137,7 +140,7 @@ const EditProduct = () => {
       {errorsList.map((error, index) =>
         <div key={index} className='mt-3 container alert alert-danger'>{error.message}</div>
       )}
-      <Form onSubmit={onSubmitHandler} className='container my-3'>
+      <Form onSubmit={onSubmitHandler} className='container my-3' data-aos="zoom-out-right" data-aos-duration="3000">
 
         <Form.Group className="mb-3" controlId="title">
           <Form.Label>title</Form.Label>

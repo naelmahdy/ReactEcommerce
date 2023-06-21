@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { addProduct, getCategories, getSubCategories, getTypes } from '../../../services/api';
 import joi from 'joi'
 import { ToastContainer, toast } from 'react-toastify';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const AddProduct = () => {
   let navigate = useNavigate()
   // get the api and show the data in the options
@@ -33,7 +34,8 @@ const AddProduct = () => {
 
 
   useEffect(() => {
-
+    AOS.init();
+    AOS.refresh();
     getCategories().then((res) => {
       setCategories(res.data)
       setCategoriesValue(res.data[0].id)
@@ -109,7 +111,7 @@ const AddProduct = () => {
       {errorsList.map((error, index) =>
         <div key={index} className='mt-3 container alert alert-danger'>{error.message}</div>
       )}
-      <Form onSubmit={onSubmitHandler} className='container my-3'>
+      <Form onSubmit={onSubmitHandler} className='container my-3' data-aos="zoom-out-right" data-aos-duration="3000">
 
         <Form.Group className="mb-3" controlId="title">
           <Form.Label>title</Form.Label>

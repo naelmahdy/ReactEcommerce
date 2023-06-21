@@ -1,11 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Login.scss'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { getUser } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
 import joi from 'joi'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Login = ({ logIn }) => {
+
+  useEffect(() => {
+
+    AOS.init();
+    AOS.refresh();
+
+  }, [])
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -35,12 +45,7 @@ const Login = ({ logIn }) => {
       }
     }
   }
-  // let x = localStorage.getItem('userData')
-  // useEffect(() => {
 
-
-
-  // }, [x])
 
   let validateFormData = () => {
     const schema = joi.object({
@@ -61,14 +66,14 @@ const Login = ({ logIn }) => {
       )}
       {errorMessage ? <div className='alert alert-danger'>{errorMessage}</div> : ''}
 
-      <Form onSubmit={onSubmitHandler}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form onSubmit={onSubmitHandler} data-aos="zoom-out-right" data-aos-duration="3000">
+        <Form.Group className="mb-3" controlId="formBasicEmail" >
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} />
 
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-3" controlId="formBasicPassword" >
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
         </Form.Group>

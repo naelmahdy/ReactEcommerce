@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './List.scss'
 import Card from '../Card/Card'
 import { getSingleCategory, getSingleSubCategory, maxPriceRangeProduct, sortProduct } from '../../services/api'
+import FetchProductsError from '../FetchProductsError/FetchProductsError'
 
 const List = ({ selectedSubCategories, maxPrice, sort, catId }) => {
   const [data, setData] = useState([])
@@ -100,7 +101,7 @@ const List = ({ selectedSubCategories, maxPrice, sort, catId }) => {
   return (
     <div className='list'>
 
-      {error ? 'something went wrong' : (loading ? 'loading' : data?.map(item => (< Card item={item} key={item.id} />)))}
+      {error ? <FetchProductsError /> : (loading ? 'loading' : data?.map(item => (< Card item={item} key={item.id} />)))}
 
 
     </div>
